@@ -1,0 +1,22 @@
+arr[]={16,21,11,8,12,22} -> Merge Sort
+
+// Calculated index mid point -> (6/2)=index[3]
+// An array of 6 items is divided into two arrays of size 3 and 3.
+arr1[]={16,21,11}, arr2={8,12,22}
+
+// Calculated indexes mid point -> (3/2)=index[1] and 
+// Arraye of 3 items is divided into two arrays of size 1 and 2.
+arr1a[]={16}, arr1b={21,11}, arr2a={8}, arr2b={12,22}
+
+// Divided these two arrays into further halves
+// Until the atomic units of the array is reached and further division is not possible.
+arr1a[]={16}, arr1ba={21}, arr1bb={11}, arr2a={8}, arr2ba={12}, arr2bb={22}
+
+// After dividing the array into smallest units
+// Started merging the elements again based on comparison of size of elements
+// Compared the element for each list and then combined them into another list in a sorted manner.
+arr1a[]={16}, arr1b={11,21}, arr2a={8}, arr2b={12,22}
+arr1[]={11,16,21}, arr2={8,12,22}
+arr[]={8,11,12,16,21,22} -> Sorted
+
+Big O Notation O(nlogn)
